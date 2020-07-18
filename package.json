@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Second Minor Project",
+  "description": "Portfolio",
   "main": "index.js",
   "scripts": {
     "start": "npm run lite",
@@ -10,10 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "\u0016https://github.com/shubh2001/CourseraWebDev"
+    "url": "git+https://github.com/shubh2001/Portfolio.git"
   },
   "author": "Shubh Singhal",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubh2001/Portfolio/issues"
+  },
+  "homepage": "https://github.com/shubh2001/Portfolio#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
