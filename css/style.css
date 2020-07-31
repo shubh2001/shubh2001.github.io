@@ -8,6 +8,9 @@
     opacity: 0.8;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 .row-header:hover {
     color: blue;
     opacity: 1;
@@ -67,7 +70,8 @@ body {
 }
 .bg-dark {
     opacity: 0.8;
-}
+    transition: all 200ms linear;
+    box-shadow: 4px 0 20px -5px rgba(0,0,0,.6);}
 
 .hero-image {
    
