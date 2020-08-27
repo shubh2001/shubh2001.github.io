@@ -1,5 +1,4 @@
 .row-header h2 {
-    margin: 0px auto;
     padding: 0px auto;
     text-align: center;
     margin: 70px 0px 60px;    
@@ -15,10 +14,38 @@ html {
     color: blue;
     opacity: 1;
 }
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 2.3s;
+    transition-property: opacity;
+   }
+   .carousel-indicators li {
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    background-color: rgb(140, 140, 212);
+    opacity: 0.3;
+}
+   .carousel-indicators .active {
+    transition: ease-in 300ms all;
+    background-color:rgb(5, 5, 168);
+    width: 11px;
+    height: 11px;
+     opacity: 1;
+}
+   
+   .carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+     opacity: 1;
+   }
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
-    border-bottom: 1px ridge;
     min-height: 400px;
 }
 body {
@@ -49,37 +76,40 @@ body {
  .navbar-nav .nav-link {
     color: rgb(248, 245, 245);
     padding-right: 20px;
-    transition: all linear 0.3s;
+    transition: all ease 0.3s;
     font-weight: 600;
     
 }
 .navbar-brand {
     color: rgb(248, 245, 245);
-    transition: all linear 0.3s;
+    transition: all linear 0.1s;
 }
 .navbar-brand:hover {
-    color: rgb(0, 0, 255);
+  color: white;
+  text-shadow: 1px 1px 2px white;
 }
 .navbar-light .navbar-toggler {
     color: rgba(0,0,0);
     border-color: rgba(0,0,0,.1);
 }
  .navbar-nav:hover  .nav-link:hover {
-    color: blue;
-   
+   color: white;
+   text-shadow: 1px 1px 2px white;
 }
-.bg-dark {
+.bg-blue {
     opacity: 0.8;
     transition: all 200ms linear;
-    box-shadow: 4px 0 20px -5px rgba(0,0,0,.6);}
+    background-color: rgb(35, 35, 167);
+    box-shadow: 4px 0 20px -5px rgba(0,0,0,.6);
+  }
 
 .hero-image {
    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero4.jpg");
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
     
-    min-height: 1000px;
+    min-height: 700px;
   
     background-attachment: fixed;
     background-position: center;
@@ -103,10 +133,27 @@ body {
   .hero-text h1 {
       font-size: 70px;
   }
+  .hero-text span {
+      font-size: 25px;
+  }
+  .blinking-cursor {
+    pointer-events: none;
+    user-select: none;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  @keyframes blink {
+    to {
+      visibility: hidden;
+    }
+  }
   .box {
     margin-top: 20px;
     box-shadow: rgba(175, 176, 177, 0.6) 0px 0px 30px;
     background-color: #fff;
+    transition: all ease 300ms;
+  }
+  .box:hover {
+    box-shadow: rgba(87, 88, 88, 0.6) 0px 0px 30px;
   }
   .image {
       background-image: url(../img/Profile.JPG) ;
@@ -163,34 +210,10 @@ body {
     transition: .9s;
     background-color:blue;
 }
-.portfolio-item img {
-    transition: all ease-in-out  0.8s;
-    overflow: hidden;
-    margin: 0 auto;
-  
-}
-.portfolio-item:hover img {
-transform: scale(1.08);
-}
-  .portfolio-title {
-      
-      font-family: sans-serif;
-      font-weight: 700;
-      margin: 10px 15px 13px 15px;
-     
-      
-  }
+
   .contactme h2 {
-       margin: 40px 0px 40px;;
+       margin: 40px 0px 40px;
   }
-   .portfolio-box {
-       height: 430px;
-   }  
-   .portfolio-box img{
-    width: 70%;
-    height: 370px;
-    padding-top: 20px;
-   }
   .socialbox {
       padding: 22px;
   }
@@ -209,20 +232,25 @@ transform: scale(1.08);
       display: flex;
       margin-top: 20px;
   }
+  
   .socialicons-top a {
     font-size: 20px;
     display: inline-block;
     color: rgb(248, 248, 248);
     line-height: 1;
-    margin: 0px 8px;
+    margin: 10px 8px;
     transition: all 0.3s ease 0s;
     padding: 14px;
     border-radius: 50%;
-    border-width: 1px;
+    border-width: 2px;
     border-style: solid;
-    border-color: rgb(81, 81, 85);
+    border-color: rgb(125, 125, 133);
     border-image: initial;
+    transition: all ease 200ms;
 }
+.socialicons-top a:hover {
+    border: solid 2px rgb(88, 88, 179);
+} 
 .socialicons-bottom a {
     font-size: 20px;
     display: inline-block;
@@ -248,13 +276,69 @@ transform: scale(1.08);
     border-radius: 50%;
     border-width: 1px;
     border-style: solid;
-    border-color: rgb(221, 221, 228);
+    border: white 4px solid;
+    transition: all ease 300ms;
     border-image: initial;
 }
 .socialicons a:hover {
     color: rgb(255, 255, 255);
     background-color:rgb(6, 6, 189);
+    border: solid 3px rgb(88, 88, 179);
 }
+.card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .card img {
+    height:250px;
+    width:100%;
+  }
+  .card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .card-text {
+      display: inline;
+  }
+  .card .card-text i {
+      color: black;
+      transition: all ease 400ms;
+  }
+  .card .card-text i:hover {
+    color: blue;
+}
+
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:50px;  
+    text-align: center;
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
 #footer {
     position: relative;
     text-align: center;
@@ -286,12 +370,7 @@ transform: scale(1.08);
         padding: 7px;
     }
     }
-  @media (max-width:992px)
-  {
-      .portfolio-title {
-          font-size: 12px;
-      }
-  }
+ 
   @media (max-width: 767px)
   {
       .nest {

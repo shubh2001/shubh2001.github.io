@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-social.css">
-
+    <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/portfolio.png">
     <title>Portfolio</title>
 </head>
 <body>
@@ -20,21 +21,22 @@
             <a class="navbar-brand" href="#">Portfolio</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav ml-auto">
-                        <li class="nav-item" ><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about"><span class="fa fa-info fa-lg"></span> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio"><span class="fa fa-picture-o fa-lg"></span> Portfolio</a></li>
-                        <li class="nav-item "><a class="nav-link" href="#contact"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                        <li class="nav-item ml-2" ><a class="nav-link" href="./index.html"></span> Home</a></li>
+                        <li class="nav-item ml-2"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item ml-2"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item ml-2"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="hero-image">
-        
+         
           <div class="row">
             
                 <div class="hero-text">
                   <h1>Shubh&nbsp;Singhal</h1>
-                  <p>Undergraduate <span class="fa fa-star"></span> Front-End Web Developer <span class="fa fa-star"></span> IOT enthusiast</p>
+                  <span id="type-text">.</span>
+                  <span class="blinking-cursor">_</span>
                   <div class="socialicons-top justify-content-center">
                     <a href="https://www.facebook.com/shubh.singhal.332"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                     <a href="https://www.instagram.com/shubh._.27/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -44,13 +46,17 @@
                 </div>
           
         </div>
-      </div>
+ 
+    </div>
      <div class="container" id="about">
-        <div class="row-header align-self-center">
-            <h2>ABOUT</h2>
+        <div class="row-header align-self-center wow fadeInUp">
+            <h2>ABOUT
+              <hr style="width: 100px; background-color: rgb(25, 25, 228); height: 2.5px;">
+
+            </h2>
         </div>
        
-         <div class="box">
+         <div class="box wow fadeInUp" data-wow-delay="400ms">
             <div class="row">
          
            <div class="image col-md-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
@@ -74,8 +80,8 @@
                     </ul>
                   </div>
                 </div>
-                
-                <div class="skills">
+                <hr style="width: 70%; height: 2px; color: rgb(148, 139, 139); height: 2px;">
+                <div class="skills wow fadeInRight" data-wow-delay="600ms" data-wow-duration="2s">
                    <strong>Skills</strong>
                    <div class="progress">
                     <span class="skill">HTML <i class="val">80%</i></span>
@@ -107,113 +113,108 @@
          </div>
      </div>
     </div>
-    
-    <div class="container" id="portfolio">
-       <div class="row-header align-self-center">
-           <h2>PORTFOLIO</h2>
-       </div>
-      <div class="row">
-          <div class="col-12">
-              <div class="box">
-                  <div class="row">
-                      <div class="col-12">
-                        <div class="sub-header">
-                           <h4> <i class="fa fa-star"></i> Certifications</h4>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="img/HTML.png" alt="portfolio-image"  class="img-fluid">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">HTML</span> 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="img/CSS.png" alt="portfolio-image" class="img-fluid">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">CSS</span> 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="img/JS.png" alt="portfolio-image" class="img-fluid">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">JavaScript</span> 
-                        </div>
-                    </div>
-                  
-                  
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="img/AR.png" alt="portfolio-image" class="img-fluid">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">Responsive Design</span> 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item">
-                            <img src="img/AC.png" class="img-fluid" alt="portfolio-image">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">Arduino</span> 
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-4">
-                        <div class="portfolio-item"> 
-                            <img src="img/B4.png" class="img-fluid" alt="portfolio-image">
-                        </div>
-                        <div class="row portfolio-title justify-content-center">
-                          <span style="border-bottom: blue 3px solid;">Bootstrap</span> 
-                        </div>
-                    </div>
+    <hr style="width: 70%; height: 2px; color: rgb(148, 139, 139); height: 2px;">
+
+  <div class="container" id="portfolio">
+    <div class="row-header wow fadeInUp" data-wow-delay="400ms">
+      <h2>CERTIFICATIONS
+        <hr style="width: 200px; background-color: rgb(25, 25, 228); height: 2.5px;">
+      </h2>
+      
+    </div>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6">
+        <div class="box wow fadeInLeft" data-wow-delay="700ms" data-wow-duration="2s">
+            <div id="mycarousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="img/Cert1-1.png">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/Cert4-1.png">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/Cert2-1.png">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="img/Cert3-1.png">
                 </div>
               </div>
-          </div>
-      </div>
-    </div>
-    <div class="container">
-        <div class="row row-content">
-            <div class="col-12 col-md-5 offset-md-1">
-                <div class="box">
-                    <div class="portfolio-box">
-                       <div style="text-align: center;">
-                        <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg" alt="portfolio-image">
-                       </div>
-                       <div class="portfolio-title" style="text-align: center;">
-                           <span ><strong><a href="https://shubh2001.github.io/DoorGame/DoorGame.html" target="_blank" style="text-decoration: none;">Chore Door</a></strong> game created by using basic HTML,CSS &amp; JS.</span>
-                       </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-5" >
-                <div class="box">
-                    <div class="portfolio-box">
-                       <div style="text-align: center;">
-                        <img src="img/QM.jpg" alt="portfolio-image">
-                       </div>
-                       <div class="portfolio-title" style="text-align: center;">
-                           <span ><strong><a href="https://shubh2001.github.io/NumberGuessGame/index.html" target="_blank" style="text-decoration: none;">Number Guess</a></strong>, a user vs comp game completely built on basic JS logic </span>
-                       </div>
-                    </div>
-                </div>
+              <ol class="carousel-indicators">
+                <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#mycarousel" data-slide-to="1"></li>
+                <li data-target="#mycarousel" data-slide-to="2"></li>
+                <li data-target="#mycarousel" data-slide-to="3"></li>
+              </ol>
+              <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                <span class="fa fa-chevron-circle-left fa-2x" style="color: blue;"></span>
+              </a>
+              <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                <span class="fa fa-chevron-circle-right fa-2x" style="color:blue;"></span>
+               </a>
             </div>
         </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div class="d-flex justify-content-center align-self-center wow fadeInRight"
+         data-wow-delay="700ms" data-wow-duration="2s">
+           <img class="d-block img-fluid" src="img/UN.svg">
+        </div>
+      </div>
     </div>
+    <hr style="width: 70%; height: 2px; color: rgb(148, 139, 139); height: 2px;">
+    <div class="row-header wow fadeInUp" data-wow-delay="400ms">
+      <h2>PROJECTS
+        <hr style="width: 140px; background-color: rgb(25, 25, 228); height: 2.5px;">
+      </h2>
+    </div>  
+      <div class="row row-content">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3 wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="2s">
+            <div class="card card-block">
+              <img src="img/QM.jpg" alt="Guess Number">
+                  <h4 class="card-title mt-3 mb-2" style="text-align: center;"><span class="fa fa-star"></span> Guess the number! <span class="fa fa-star"></span></h4>
+                  <h4 class="card-title  mb-2" style="text-align: center; font-size: 13px; color: rgb(88, 88, 88);">A game built on JavaScript</h4>
+                  <p class="card-text"><a href="https://github.com/shubh2001/NumberGuessGame" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://shubh2001.github.io/NumberGuessGame/" target="_blank"><i class="fa fa-globe fa-2x"></i></a></p>   
+            </div>  
+          </div>
+          <div class="col-12 col-md-3 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2s">
+            <div class="card card-block">
+              <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/robot.svg" alt="Chore Door">
+                  <h4 class="card-title mt-3 mb-2" style="text-align: center;"><span class="fa fa-star"></span> Chore Door! <span class="fa fa-star"></span></h4>
+                  <h4 class="card-title  mb-2" style="text-align: center; font-size: 13px; color: rgb(88, 88, 88);">Built on JavaScript's math object</h4>
+                  <p class="card-text"><a href="https://github.com/shubh2001/DoorGame" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://shubh2001.github.io/DoorGame/DoorGame.html" target="_blank"><i class="fa fa-globe fa-2x"></i></a></p>   
+            </div>  
+          </div>
+          <div class="col-12 col-md-3 wow fadeInRight" data-wow-delay="500ms" data-wow-duration="2s">
+            <div class="card card-block">
+              <img src="img/9.png" alt="Decor Website">
+                  <h4 class="card-title mt-3 mb-2" style="text-align: center;"><span class="fa fa-star"></span> D<span style="color: orangered;">E</span>COR <span class="fa fa-star"></span></h4>
+                  <h4 class="card-title  mb-2" style="text-align: center; font-size: 13px; color: rgb(88, 88, 88);">Website for an interior design company</h4>
+                  <p class="card-text"><a href="https://github.com/shubh2001/DecorID" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://shubh2001.github.io/DecorID/" target="_blank"><i class="fa fa-globe fa-2x"></i></a></p>   
+            </div>  
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="d-flex justify-content-center align-self-center">
+             <img class="d-block img-fluid" style="width: 50%; height: 30%;" src="img/Projects.svg">
+          </div>
+        </div>
+      </div>
+  </div>
+  <hr style="width: 70%; height: 2px; color: rgb(148, 139, 139); height: 2px;">
 
+  
     <div class="container" id="contact">
-       <div class="row-header contactme">
+       <div class="row-header contactme wow fadeInUp" data-wow-delay="400ms">
         <h2>CONTACT</h2>  
        </div>
        
          <div class="row">
-           <div class="col-12 col-md-6">
+           <div class="col-12 col-md-6 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2s">
               <div class="box">
                 <form class="socialbox"> 
                    <div class="form-group row">
@@ -243,9 +244,10 @@
                 </form>
               </div>
            </div>
-           <div class="col-12 col-md-6">
-              <div class="box">
-                
+           <div class="col-12 col-md-6 wow fadeInRight" data-wow-delay="500ms" data-wow-duration="2s">
+             <div class="row">
+               <div class="col-12">
+                <div class="box">
                   <div style="text-align: center;" class="socialbox">
                     <i class="fa fa-share-alt fa-lg"></i>
                     <h5>Connect through Social Media</h5>
@@ -256,11 +258,17 @@
                       <a href="https://www.linkedin.com/in/shubh-singhal-4486b41a1/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     </div> 
                   </div>
-               
+                </div>
               </div>
+              </div>
+              <div class="row mt-3 justify-content-center">
+                <div class="col-7">
+                <img class="d-block img-fluid" style="height: 100%; width: 100%;" src="img/Contact.svg">
+              </div>
+            </div>
            </div>
          </div>
-       
+         <hr style="width: 70%; height: 2px; color: rgb(148, 139, 139); height: 2px;"> 
     </div>
     <div id="footer" style="margin-top: 30px;">
       <div class="container">
@@ -274,9 +282,13 @@
         <span class="credit">&copy;2020 by <strong>Shubh Singhal</strong></span>
       </div>
     </div>
-     <script src="jquery.slim.min.js"></script>
+    <script src="jquery.slim.min.js"></script>
     <script src="popper.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 </html>
