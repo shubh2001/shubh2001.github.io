@@ -22,12 +22,12 @@ function init () {
       typeText('Front-end Developer')
         .then(() => wait(2000))
         .then(() => removeText('Front-end Developer'))
-        .then(() => typeText('Undergraduate'))
+        .then(() => typeText('Mech Undergrad'))
         .then(() => wait(2000))
-        .then(() => removeText('Undergraduate'))
-        .then(() => typeText('IOT enthusiast'))
+        .then(() => removeText('Mech Undergrad'))
+        .then(() => typeText('Data Science enthusiast'))
         .then(() => wait(2000))
-        .then(() => removeText('IOT enthusiast'))
+        .then(() => removeText('Data Science enthusiast'))
         .then(typeLoop)
     }
     
