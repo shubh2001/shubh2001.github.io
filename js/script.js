@@ -15,19 +15,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('I am a ').then(typeLoop)
+      typeText('I am ').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Front-end Developer')
+      typeText('a Mechaninal Engineer')
         .then(() => wait(2000))
-        .then(() => removeText('Front-end Developer'))
-        .then(() => typeText('Mech Undergrad'))
+        .then(() => removeText('a Mechanical Engineer'))
+        .then(() => typeText('an A.I Researcher'))
         .then(() => wait(2000))
-        .then(() => removeText('Mech Undergrad'))
-        .then(() => typeText('Data Science enthusiast'))
+        .then(() => removeText('an A.I Researcher'))
+        .then(() => typeText('a Data Science enthusiast'))
         .then(() => wait(2000))
-        .then(() => removeText('Data Science enthusiast'))
+        .then(() => removeText('a Data Science enthusiast'))
         .then(typeLoop)
     }
     
